@@ -1,0 +1,149 @@
+.timing {
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.timing_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.timing_background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  width: 100%;
+  height: 105%;
+  background: rgba(255, 165, 0, 0.3);
+  z-index: 1;
+}
+
+.timing_content {
+  position: relative;
+  background: #e67e22;
+  padding: 60px 40px;
+  z-index: 3;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.timing_title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+  margin: 0 0 50px 0;
+  font-weight: normal;
+}
+
+.timing_date {
+    font-family: 'Bona Nova SC', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.timing_schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timing_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.timing_item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.timing_time {
+  font-family: 'Bona Nova SC', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  min-width: 80px;
+}
+
+.timing_event {
+  font-family: 'Bona Nova SC', cursive;
+  font-size: 1.4rem;
+  color: white;
+  text-align: right;
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .timing {
+    padding: 40px 15px;
+  }
+  
+  .timing_content {
+    padding: 40px 25px;
+    width: 87%;
+  }
+  
+  .timing_title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .timing_schedule {
+    gap: 20px;
+  }
+  
+  .timing_item {
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .timing_time {
+    font-size: 1.8rem;
+    min-width: auto;
+  }
+  
+  .timing_event {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  
+  .timing_background {
+    transform: translate(-50%, -50%) rotate(-2deg);
+    width: 95%;
+  }
+}
+
+.timing_content {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.timing_item {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.timing_item:nth-child(1) { animation-delay: 0.1s; }
+.timing_item:nth-child(2) { animation-delay: 0.2s; }
+.timing_item:nth-child(3) { animation-delay: 0.3s; }
+.timing_item:nth-child(4) { animation-delay: 0.4s; }
+.timing_item:nth-child(5) { animation-delay: 0.5s; }

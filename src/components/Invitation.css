@@ -1,0 +1,90 @@
+.invitation {
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.invitation_container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.invitation_heading {
+  font-family: 'Bona Nova SC', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #a74b00;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+}
+
+.invitation_subheading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #e67e22;
+  margin: 0 0 3rem 0;
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+}
+
+.invitation_subheading::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e67e22, transparent);
+}
+
+.invitation_text {
+  font-family: 'Bona Nova SC', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #a74b00;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .invitation {
+    padding: 60px 15px 30px 15px;
+  }
+  
+  .invitation_heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .invitation_subheading {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .invitation_text {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Анимация */
+.invitation_heading {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.invitation_subheading {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.invitation_text {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Hero from './components/Hero';
+import Place from './components/Place';
+import Invitation from './components/Invitation';
+import Timing from './components/Timing';
+import DressCode from './components/DressCode';
+import CountdownWithQR from './components/CountdownWithQR';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <Invitation />
+      <Place />
+      <Timing />
+      <DressCode />
+      <CountdownWithQR />
     </div>
   );
 }

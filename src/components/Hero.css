@@ -1,0 +1,106 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #eb9546;
+}
+
+.hero-overlay {
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+.names-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Стили для амперсанда на заднем фоне */
+.ampersand {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 18rem;
+  font-weight: bold;
+  color: rgba(255, 165, 0, 0.3);
+  z-index: 1;
+  font-family: 'Dancing Script', serif;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Стили для имен */
+.name {
+  position: relative;
+  z-index: 2;
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  text-align: left;
+  color: #a74b00;
+}
+
+.hero-date {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-family: 'Bona Nova SC', serif;
+  position: relative;
+  z-index: 3;
+}
+
+.hero_decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+}
+
+.hero_decor_top_right {
+  top: 20px;
+  right: 20px;
+  transform: rotate(180deg)
+}
+
+.hero_decor_bottom_left {
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) { 
+  .ampersand {
+    font-size: 12rem;
+    left: 15%;
+  }
+  
+  .name {
+    font-size: 4rem;
+  }
+  
+  .hero-date {
+    font-size: 1.5rem;
+  }
+  
+  .hero_decor{
+    width: 200px;
+  }
+
+  .hero_decor_top_right {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .hero_decor_bottom_left {
+    bottom: 10px;
+    left: 10px;
+  }
+}

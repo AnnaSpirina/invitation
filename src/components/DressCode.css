@@ -1,0 +1,92 @@
+.dress-code {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.dress-code_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.dress-code_title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+  color: #e67e22;
+  margin: 0 0 30px 0;
+  font-weight: normal;
+}
+
+.dress-code_description {
+  font-family: 'Bona Nova SC', serif;
+  font-size: 1.6rem;
+  color: #a74b00;
+  line-height: 1.6;
+  margin: 0 0 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dress-code_colors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dress-code_color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dress-code_color-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dress-code_color-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .dress-code {
+    padding: 60px 15px;
+  }
+  
+  .dress-code_title {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .dress-code_description {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+  
+  .dress-code_colors {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+  
+  .dress-code_color-circle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .dress-code_color-name {
+    font-size: 0.9rem;
+  }
+  
+  .dress-code_color-code {
+    font-size: 0.7rem;
+  }
+}
